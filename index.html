@@ -80,11 +80,24 @@
       z-index: 0;
       pointer-events: none;
     }
+
+#startBtn {
+  padding: 16px 32px;
+  font-size: 20px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
   </style>
+
 </head>
 <body>
 
-<audio controls loop>
+<button id="startBtn">Enter</button>
+
+<audio id="birthdaySong" loop>
   <source src="Song.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -115,22 +128,13 @@
 
   <footer>May these wishes from mere strangers you've met in your journey bring you forward ✨</footer>
 
-  <!-- Sakura petals script -->
-<script src="https://cdn.jsdelivr.net/gh/jhammann/sakura@master/sakura.min.js"></script>
-<script>
-  new Sakura('body', {
-    colors: [
-      {
-        gradientColorStart: 'rgba(255, 183, 197, 0.9)',
-        gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
-        gradientColorDegree: 120
-      }
-    ],
-    blossomCount: 30,
-    fallSpeed: 1.5,
-    maxSize: 14,
-    minSize: 9,
-    delay: 300
+ <script>
+  const button = document.getElementById('startBtn');
+  const audio = document.getElementById('birthdaySong');
+
+  button.addEventListener('click', () => {
+    audio.play();
+    button.style.display = 'none'; // Hide button after playing
   });
 </script>
 </body>
