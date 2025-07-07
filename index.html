@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Charlie 💜</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #1e1e2f, #3c2f58, #4a3d7b, #1e1e2f);
+      background-size: 400% 400%;
+      animation: gradient 20s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 2rem 0 1rem;
+      color: #b28df5;
+    }
+
+    .chat-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 2;
+      position: relative;
+    }
+
+    .chat-bubble {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 10px rgba(178, 141, 245, 0.2);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .chat-bubble strong {
+      color: #b28df5;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin: 3rem auto;
+      color: #aaa;
+    }
+
+    audio {
+      display: none;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="Romantic Happy Birthday (Arranged by Miranda Wong) Piano Cover.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <canvas id="sakuraCanvas"></canvas>
+
+  <h1>Happy Birthday Charlie 💜</h1>
+
+  <div class="chat-container">
+    <!-- Each bubble has its own delay -->
+    <div class="chat-bubble" style="animation-delay: 0.5s"><strong>Jason (Ason)</strong><br>Happy Birthday Charlie Ken.. May this special day bring you a thousand and one joys, lasting happiness, and unending blessings. May all your dreams and hopes come true. Keep moving forward with enthusiasm and confidence, because a bright future awaits. Happy bitday okay... 🎉🎉🎉🎂Love people who always do everything for you... </div>
+    <div class="chat-bubble" style="animation-delay: 1.2s"><strong>Noah Solipuk</strong><br>Happy birthday to the person I barely met but I heard so much about. Hope you succeed in whatever you pursue, and may your life choices never bring regret.</div>
+    <div class="chat-bubble" style="animation-delay: 1.9s"><strong>Charles (Romeo)</strong><br>Hey Charlie, I can’t believe it’s your birthday soon. I just wanna wish you a happy birthday and all the best in your future. No matter what happens, no matter what obstacles — always know that you can do it. Anyways, happy birthday and have a great one!!! 🎉</div>
+    <div class="chat-bubble" style="animation-delay: 2.6s"><strong>Danny & Miza</strong><br>Happy Birthday Charlie!! It’s such a shame we never got to truly meet you IRL. We hope you’ll continue to plan ahead and achieve great things. The sky is not the limit!!</div>
+    <div class="chat-bubble" style="animation-delay: 3.3s"><strong>Alicia Kan</strong><br>Haiii, lama sdh since the last we met and now I heard it’s your bday! So Happy Birthday Charlie! Hope we can meet again one day and all da best ahh for your future <3</div>
+    <div class="chat-bubble" style="animation-delay: 4.0s"><strong>Collin Estera</strong><br>Yo Charlie "Happy bday Age++" May you continue to work towards your dreams as a developer.</div>
+    <div class="chat-bubble" style="animation-delay: 4.7s"><strong>Brandon & Evy</strong><br>Halo lil man, we both just wanna wish you a good bday and hope you have a successful future!</div>
+    <div class="chat-bubble" style="animation-delay: 5.4s"><strong>Ameesha Anand</strong><br>Hey there! We never met in real life and I heard a lot of stuff from Mark. Happy birthday! Hope we can meet one day — and take care of yourself on your journey to be a better you!</div>
+    <div class="chat-bubble" style="animation-delay: 6.1s"><strong>Elizabeth Juro (Eliz)</strong><br>Hello Charlie!! HAPPY BIRTHDAY! 🩵 Hope you have a wonderful day celebrating with your loved ones. Stay healthy and always be happy 😄 Wishing you a truly blessed birthday ✨✨</div>
+    <div class="chat-bubble" style="animation-delay: 6.8s"><strong>Keevan Vanadan</strong><br>Wainah Tompinai, Salamat Hari Jadi. Harap semua okay sana ngan kerja. Have a great birthday kioo.</div>
+    <div class="chat-bubble" style="animation-delay: 7.5s"><strong>Abby & Aiman</strong><br>Happy Birthday, code wizard Charlie 🥳🎉 May your day be free of bugs 🦟 your cake be infinite in layers .🎂Keep compiling those dreams into  you're reality that you always wanted 🥹here’s to another year of pushing boundaries and debugging life! 🚀👨‍💻 And always be you 🥳 from Abi and Aiman</div>
+    <div class="chat-bubble" style="animation-delay: 8.2s"><strong>Cheryl & Zharif</strong><br>Hey Charlie, hope you're doing well. Although we both dint interact much but you were very kind hearted from your voice and actions when we met. Happy birthday to you🥳, remember to always have faith in yourself and trust the process. 💪</div>
+    <div class="chat-bubble" style="animation-delay: 8.9s"><strong>Sandra & Dan</strong><br>Heyy, shame you could not make it to our engagement but it is what it is. We both wish you a very happy birthday dear stranger. May God blesses you abundantly with opportunities and a succesful journey in your life.</div>
+    <div class="chat-bubble" style="animation-delay: 9.6s"><strong>Isaac Golingai</strong><br>hey Charlie, happy birthday. Wishing you success in life and take care.</div>
+    <div class="chat-bubble" style="animation-delay: 10.3s"><strong>Edric Gordon</strong><br>Happy Birthday developer man. All the best ngan kerja and have good day celebrating your bday today bro!</div>
+    <div class="chat-bubble" style="animation-delay: 11.0s"><strong>Danial Ariffin</strong><br>Haloo birthday boy. Happy Birthday to you and may Allah bless you with a long life and good health big boy.</div>
+  </div>
+
+  <footer>May these wishes from mere strangers you've met in your journey bring you forward ✨</footer>
+
+  <!-- Sakura petals script -->
+<script src="https://cdn.jsdelivr.net/gh/jhammann/sakura@master/sakura.min.js"></script>
+<script>
+  new Sakura('body', {
+    colors: [
+      {
+        gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+        gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+        gradientColorDegree: 120
+      }
+    ],
+    blossomCount: 30,
+    fallSpeed: 1.5,
+    maxSize: 14,
+    minSize: 9,
+    delay: 300
+  });
+</script>
+</body>
+</html>
